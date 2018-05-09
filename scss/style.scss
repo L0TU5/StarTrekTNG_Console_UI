@@ -1,0 +1,348 @@
+@import url(https://fonts.googleapis.com/css?family=Anton);
+
+$rose-c: #c96796;
+$peach-c: #c96565;
+$tan-c: #c96796;
+$orange-c: #ff9966;
+
+body {
+	background: black;
+	background-attachment: fixed;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	width: 100%;
+	font-family: "Anton", serif;
+}
+header {
+	background: linear-gradient(
+		to right,
+		#cc9bcc 80%,
+		#9e9eff 80%
+	);
+	border-radius: 0 30px 30px 0;
+	height: 6.5vh;
+	margin-left: -10px;
+	width: 100%;
+}
+.logo {
+	color: #ff9900;
+	float: right;
+	background: black;
+	font-size: 7vh;
+	height: 8.5vh;
+	width: 49.5vh;
+	padding-left: 1vh;
+	padding-bottom: 1vh;
+	margin-top: -2vh;
+	margin-right: 30px;
+	margin-left: 55%;
+}
+.subHeader {
+	background: linear-gradient(
+		to left,
+		#cc9bcc 0%,
+		#cc9bcc 50%,
+		#cc9bcc 65%,
+		#9e9eff 100%
+	);
+	border-radius: 30px 30px 30px 30px;
+	margin: 1.5vh;
+	height: 4vh;
+	width: 80%;
+}
+.subLogo {
+	float: left;
+	background: black;
+	color: #ff9900;
+	font-size: 4vh;
+	width: 43.5vh;
+	height: 5.5vh;
+	padding-left: 1vh;
+	padding-bottom: 3vh;
+	margin-top: -1vh;
+	margin-left: 7%;
+}
+.mainConsole {
+	background: yellow;
+	border: 1px solid yellow;
+	border-radius: 20px 20px 0 0;
+	margin: 3vh auto;
+	width: 90%;
+	min-height: 75vh;
+}
+.dot {
+	position: relative;
+	bottom: 1vh;
+}
+.dot1 {
+	position: relative;
+	bottom: 0.75vh;
+}
+.iMakedDis {
+	background: linear-gradient(
+		to left,
+		#cc9bcc 80%,
+		#9e9eff 80%
+	);
+	border-radius: 30px 30px 30px 30px;
+	margin: 1.5vh 2vh;
+	height: 2.5vh;
+	width: 95%;
+	position: fixed;
+	bottom: 0;
+}
+.whoMakedDis {
+	float: left;
+	background: black;
+	color: #ff9900;
+	font-size: 2.5vh;
+	width: 34vh;
+	height: 4.5vh;
+	padding-left: 0.5vh;
+	padding-bottom: 1vh;
+	margin-top: -0.7vh;
+	margin-left: 3%;
+}
+.myLinks {
+	position: relative;
+	bottom: -0.5vh;
+	color: yellow;
+}
+.footerBlock {
+	background: black;
+	position: fixed;
+	bottom: 0;
+	margin-left: -10px;
+	height: 5vh;
+	width: 110%;
+}
+a {
+	color: #ff9900;
+}
+a:hover {
+	color: #9e9eff;
+}
+/*-- testing responsive rows -- */
+* {
+	box-sizing: border-box;
+}
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+[class*="col-"] {
+	float: left;
+	padding: 1vh;
+}
+.col-1 {
+	width: 8.33%;
+}
+.col-2 {
+	width: 16.66%;
+}
+.col-3 {
+	width: 25%;
+}
+.col-4 {
+	width: 33.33%;
+}
+.col-5 {
+	width: 41.66%;
+}
+.col-6 {
+	width: 50%;
+}
+.col-7 {
+	width: 58.33%;
+}
+.col-8 {
+	width: 66.66%;
+}
+.col-9 {
+	width: 75%;
+}
+.col-10 {
+	width: 83.33%;
+}
+.col-11 {
+	width: 91.66%;
+}
+.col-12 {
+	width: 100%;
+}
+
+.border {
+	border: 1px solid red;
+}
+.row1 {
+	height: 17vh;
+}
+#row1colA {
+	background: #9e9eff;
+	border-radius: 10px 0 0 10px;
+	margin-left: -1px;
+	margin-top: -1px;
+	height: 100%;
+}
+#row1colB {
+	background: #ffc77d;
+	margin-left: 1vh;
+	margin-top: -1px;
+	height: 100%;
+}
+#row1colC {
+	background: #cc9bcc;
+	margin-left: 1vh;
+	margin-top: -1px;
+	height: 100%;
+}
+#row1colD {
+	background: #c45a5a;
+	border-radius: 0 10px 0 0;
+	margin-left: 1vh;
+	margin-top: -1px;
+	height: 30vw;
+}
+#row2colA {
+	background: black;
+	border-radius: 0 20px 0 0;
+	height: 65%;
+	margin-top: -0.3vh;
+	margin-left: -0.3vh;
+	margin-right: 0.3vh;
+	position: absolute;
+}
+.row2A {
+	margin-bottom: 1vh;
+}
+.btn-col {
+	padding-left: 2vh;
+	padding-top: 3vh;
+	font-size: 5vh;
+	height: 10vh;
+	width: 25%;
+	border-radius: 0px 40px 40px 0px;
+	margin-left: 8.5vw;
+	margin-bottom: 1vh;
+}
+.A1 {
+	color: black;
+	background: #c96565;
+}
+.A1.active {
+	color: #c96565;
+	background: black;
+}
+.B2 {
+		color: black;
+	background: #ffc77d;
+}
+.B2.active {
+			color: #ffc77d;
+	background: black;
+}
+.C3 {
+		color: black;
+	background: #c96796;
+}
+.C3.active {
+			color: #c96796;
+	background: black;
+}
+.D4 {
+		color: black;
+background: #ff9966;
+}
+.D4.active {
+			color: #ff9966;
+	background: black;
+}
+#row2AcolA {
+}
+.row3 {
+	margin-top: 1vh;
+	margin-left: -0.3vh;
+	margin-right: 5%;
+}
+#baseRow {
+	height: 36vh; 
+	background: #ffc77d;
+}
+.screen {
+	width: 60%;
+	position: absolute;
+	right: 2vh;
+	top: 1vw;
+	height: 60vh;
+	text-align: center;
+}
+#starfleet {
+	border-radius: 20px;
+	height: 30vh;
+	margin-top: -.5vh;
+	position: relative;
+	z-index: 100;
+}
+.start {
+	background: #ff9900;
+	color: black;
+	text-align: center;
+	font-size: 5vh;
+	width: 25vw;
+	margin: auto;
+	border-radius: 45px 45px 45px 45px;
+}
+#score,
+#mode,
+#reset {
+	margin-top: 1vh;
+	padding-top: 2vh;
+	color: black;
+	font-size: 2vh;
+	width: 20vw;
+	height: 5vh;
+}
+#score {
+	border-radius: 45px 0px 0px 45px;
+	margin-left: 3vh;
+	padding-right: 0.5vw;
+	text-align: right;
+	margin-top: 2vh;
+	float: left;
+	background: #9e9eff;
+}
+#reset,
+#mode {
+	text-align: left;
+	padding-left: 0.5vw;
+	margin-top: 2vh;
+	margin-left: 33vw;
+	border-radius: 0px 45px 45px 0px;
+}
+#reset {
+	background: #c96796;
+}
+#mode {
+	background: #cc9bcc;
+}
+.scoreCount,
+#setMode {
+	font-size: 4vh;
+	position: absolute;
+	height: 5vw;
+}
+.scoreCount {
+	margin-left: 24vw;
+	width: 10vw;
+	text-align: left;
+	margin-top: 1.5vh;
+	color: #9e9eff;
+}
+#setMode {
+	right: 22.5vw;
+	width: 25vw;
+	text-align: right;
+	margin-top: -5vh;
+	color: #cc9bcc;
+}
